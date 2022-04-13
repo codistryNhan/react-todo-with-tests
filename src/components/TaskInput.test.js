@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
+import { render, screen, fireEvent, wait } from '@testing-library/react';
 
 import TaskInput from './TaskInput';
 
@@ -16,6 +16,6 @@ describe('<TaskInput />', () => {
     const inputNode = screen.getByPlaceholderText('Enter new task');
     fireEvent.change(inputNode, { target: { value: 'new task!' } });
     fireEvent.submit(inputNode);
-    await waitFor(() => expect(mockOnSubmit).toHaveBeenCalledWith('new task!'));
+    await wait(() => expect(mockOnSubmit).toHaveBeenCalledWith('new task!'));
   });
 });

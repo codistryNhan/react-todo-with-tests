@@ -10,6 +10,7 @@ const TaskInput = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     onSubmit(value);
+    setValue('');
   };
 
   return (

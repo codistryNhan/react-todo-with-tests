@@ -3,15 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/react-hooks": "^5.0.0",
-    "@testing-library/user-event": "^7.2.1",
-    "chromedriver": "^100.0.0",
-    "jest-fetch-mock": "^3.0.3",
-    "json-server": "^0.16.3",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "json-server": "^0.17.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.0",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -22,7 +21,10 @@
     "json-server": "json-server --watch db.json --port 3001"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -37,7 +39,11 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "selenium-webdriver": "^4.0.0-alpha.7"
+    "chromedriver": "^100.0.0",
+    "jest-fetch-mock": "^3.0.3",
+    "selenium-webdriver": "^4.1.1"
+  },
+  "jest": {
+    "resetMocks": false
   }
 }
