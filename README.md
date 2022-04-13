@@ -1,4 +1,4 @@
-# A React Todo app with unit tests and integrations tests
+# Testing with React Apps
 
 ## Tech Stack
 
