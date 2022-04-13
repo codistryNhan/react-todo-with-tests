@@ -1,13 +1,14 @@
 # A React Todo app with unit tests and integrations tests
 
-Stack
-React
-Jest - Testing Framework
-@testing-library - Unit Testing
-@selenium-webdriver - Integration Test
-@json-server - mock DB
-@jest-fetch-mock - enables mock fetch()
-@testing-library/react-hooks - libray to test hooks
+## Tech Stack
+
+- React (Create-React-App)
+- Jest - Testing Framework
+- @testing-library - Unit Testing
+- @selenium-webdriver - Integration Test
+- @json-server - mock DB
+- @jest-fetch-mock - enables mock fetch()
+- @testing-library/react-hooks - libray to test hooks
 
 ## Testing Process
 
